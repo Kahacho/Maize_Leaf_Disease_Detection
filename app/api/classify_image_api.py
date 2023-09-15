@@ -1,6 +1,4 @@
 from io import BytesIO
-from pathlib import Path
-import shutil
 
 from PIL import Image
 from fastapi import APIRouter, File, UploadFile

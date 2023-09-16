@@ -1,7 +1,7 @@
 from io import BytesIO
+from PIL import Image
 
 from fastapi import APIRouter, UploadFile
-from PIL import Image
 
 from ..classifier.model import predict_image
 

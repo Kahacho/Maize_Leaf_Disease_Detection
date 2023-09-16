@@ -44,8 +44,9 @@ class Net(nn.Module):
         self.drop = nn.Dropout(p=0.2)
 
         # Our 128*128 image tensors will be pooled twice with a kernel size 0f 2.
-        # 128/2/2 is 32. So our feature tensors are now 32 * 32, and we have generated 24 of them.
-        # We need to flatten these and feed them to a fully-connected layer to map them to the probability of each class
+        # 128/2/2 is 32. So our feature tensors are now 32 * 32,
+        # and we have generated 24 of them. We need to flatten these and feed them
+        # to a fully-connected layer to map them to the probability of each class
         self.fc = nn.Linear(in_features=32 * 32 * 24, out_features=num_classes)
 
     def forward(self, x):
@@ -59,7 +60,8 @@ class Net(nn.Module):
         x = F.relu(self.drop(self.conv3(x)))
 
         # Only drop the features if this is a training pass.
-        # By default, self.training flag is set to True, i.e. modules are in train mode by default
+        # By default, self.training flag is set to True,
+        # i.e. modules are in train mode by default
         x = F.dropout(x, training=self.training)
 
         # Flatten

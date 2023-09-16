@@ -1,10 +1,9 @@
 from io import BytesIO
 
+from fastapi import APIRouter, UploadFile
 from PIL import Image
-from fastapi import APIRouter, File, UploadFile
 
 from ..classifier.model import predict_image
-
 
 router = APIRouter()
 

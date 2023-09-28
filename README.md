@@ -14,9 +14,3 @@
 However, copy the images in `MSV_2` to `MSV_1`, and rename `MSV_1` to `MSV`.
 
 * Run the `model_training.ipynb` script to see the training of a CNN model in action.
-
-
----
-## References
-1. https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/4-convolutional-neural-networks
-2. https://github.com/MicrosoftDocs/ml-basics/blob/master/05b%20-%20Convolutional%20Neural%20Networks%20(PyTorch).ipynb

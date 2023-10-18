@@ -25,5 +25,6 @@ COPY models ./models
 
 # The command to run when the container starts
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
 # Listen to the PORT provided by railway.app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]

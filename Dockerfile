@@ -26,4 +26,5 @@ COPY models ./models
 # The command to run when the container starts
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
-CMD["python", "./main.py"]
+# CMD["python", "./main.py"]
+ENTRYPOINT ["python3", "main.py"]

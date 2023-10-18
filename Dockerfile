@@ -25,4 +25,4 @@ COPY models ./models
 
 # The command to run when the container starts
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "${PORT:-5000}"]

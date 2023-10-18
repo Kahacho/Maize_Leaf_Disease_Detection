@@ -27,4 +27,4 @@ COPY models ./models
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 # Listen to the PORT provided by railway.app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "${PORT}"]

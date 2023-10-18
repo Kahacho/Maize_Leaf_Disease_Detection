@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    entrypoint: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    volumes:
+      - .:/Maize_Leaf_Disease_Detection
+
+
